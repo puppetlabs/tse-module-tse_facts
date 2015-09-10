@@ -1,4 +1,4 @@
-Facter.add(fact_ruby) do
+Facter.add(:fact_ruby) do
   setcode do
      "True"
   end
