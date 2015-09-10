@@ -1,0 +1,11 @@
+{
+  "name": "tse-tse_facts",
+  "version": "0.1.0",
+  "author": "Puppet Labs TSE Team",
+  "license": "Apache-2.0",
+  "summary": "Set of example custom facts",
+  "source": "https://github.com/puppetlabs/tse-module-tse_facts",
+  "project_page": "https://github.com/puppetlabs/tse-module-tse_facts",
+  "dependencies": [
+  ]
+}
