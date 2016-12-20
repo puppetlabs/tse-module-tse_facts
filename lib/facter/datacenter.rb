@@ -9,7 +9,7 @@ Facter.add('datacenter') do
     when 'pdx.puppet.vm'
       'portland'
     else
-      'unknown'
+      'unknown'  # fall back to cert name here?
     end
   end
 end
