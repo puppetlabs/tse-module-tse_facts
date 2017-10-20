@@ -10,13 +10,10 @@ end
 
 Facter.add('datacenter') do
   setcode do
-    if (domain = Facter.value('domain')).nil?
-      #if domain is null, then fall back to certname
-      domain = Facter::Util::PuppetSettings.with_puppet do
+    domain = Facter::Util::PuppetSettings.with_puppet do
         Puppet[:certname].split('.')[1..-1].join('.')
-      end
     end
-    
+   
     case domain
     when 'inf.puppet.vm' 
       'infrastructure'
