@@ -1,4 +1,4 @@
-Facter.add('domain') do
+Facter.add('AD_domain') do
   confine :osfamily => :windows
   setcode do
     begin
