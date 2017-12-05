@@ -1,6 +1,6 @@
 #!/bin/bash
 fqdn=$(hostname -f)
-echo "$fqdn"
+#echo "$fqdn"
 if [[ "$fqdn" =~ ".inf." ]];
 then
     echo "realm=inf";
