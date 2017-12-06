@@ -1,12 +1,12 @@
 #!/bin/bash
-fqdn=$(hostname -f)
-#echo "$fqdn"
-if [[ "$fqdn" =~ ".inf." ]];
+# Test
+fqdn="$(hostname -f)"
+if [[ "$fqdn" =~ ".pdx." ]];
 then
-    echo "realm=inf";
-elif [[ "$fqdn" =~ ".pdx." ]];
+    echo "realm=dmz";
+elif [[ "$fqdn" =~ ".inf." ]];
 then
-    echo "realm=pdx";
+    echo "realm=int";
 else
     echo "realm=unknown";
 fi
