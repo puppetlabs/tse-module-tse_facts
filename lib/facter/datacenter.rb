@@ -21,6 +21,8 @@ Facter.add('datacenter') do
       'sydney'
     when 'pdx.puppet.vm'
       'portland'
+    when 'ec2.internal'
+      'amazon'
     else
       'unknown'
     end
